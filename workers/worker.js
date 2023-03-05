@@ -63,6 +63,7 @@ const getOpenseaCollections = async (next, data = []) => {
     let position = 0;
     let results = [];
     while (position < items.length) {
+        await sleep(100);
         const itemsForBatch = items.slice(position, position + batchSize);
         results = [...results, ...await Promise.all(itemsForBatch.map(item => task(item)))];
         position += batchSize;
@@ -185,7 +186,7 @@ const getAlchemyCollections =
                     src: c?.image_url,
                     link: ''
                 };
-                },_data,100);
+                },_data,30);
                 resolve( vaultOpensea );
     })
         })
