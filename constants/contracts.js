@@ -1,7 +1,7 @@
 
 const JAY_CONTRACT = {
   1: {
-    address: '0x82555C123c2b55802A9f9514839B694f291499b8',
+    address: '0xd314a11D01E800583E5b0887F9117f7157A10731',
     abi: [
       {
         inputs: [],
@@ -608,7 +608,7 @@ const JAY_CONTRACT = {
     ]
   },
   5: {
-    address: '0x82555C123c2b55802A9f9514839B694f291499b8',
+    address: '0xd314a11D01E800583E5b0887F9117f7157A10731',
     abi: [
       {
         inputs: [],
