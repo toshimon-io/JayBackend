@@ -22,6 +22,4 @@ app.use(cors())
 const routes = require('./routes/routes.js')(app, fs);
 
 // finally, launch our server on port 3001.
-const server = app.listen(3000, () => {
-  console.log('listening on port %s...', server.address().port);
-});
+const server = app.listen(process.env.PORT || 5000);
