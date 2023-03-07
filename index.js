@@ -32,7 +32,7 @@ const job = new CronJob('*/50 * * * * *', function() {
         const data = JSON.parse(dataa)
         const _infuraProvider = new ethers.ethers.EtherscanProvider(
             'goerli',
-            'A7257M9X55EPEKRDUNV1Q4JH65YM7NKHIT'
+            '9d4164382aff4747951746b1be347b8b'
           );
           
           try{
@@ -60,7 +60,7 @@ const getPriceData = async (lastBlock, newLastblock) => {
   
     const _infuraProvider = new ethers.ethers.getDefaultProvider('goerli', {
         etherscan: 'A7257M9X55EPEKRDUNV1Q4JH65YM7NKHIT',
-        infura: '28c9e86d104c418384155940687a2b9b',
+        infura: '9d4164382aff4747951746b1be347b8b',
         // alchemy: 'g1GPr8Zqbwwnnc14xhraypg1rWB-1Neq',
         alchemy: 'fIsvO5eINfwXeT-GPtBFBLoXLZSwyjAx', // main
         // pocket: '95f40ef6a91572c9d6fdfc4b2c74523519186ba6cead77c4a0a87c2dc7110a33'

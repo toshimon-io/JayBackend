@@ -157,7 +157,7 @@ const getAlchemyCollections =
 fs.readFile('./data/vault.txt', 'utf8', (err, file) => {
     const _infuraProvider = new ethers.ethers.EtherscanProvider(
         'goerli',
-        'A7257M9X55EPEKRDUNV1Q4JH65YM7NKHIT'
+        '9d4164382aff4747951746b1be347b8b'
       );
     const date = new Date();
     if(file == "done"){
