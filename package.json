@@ -20,7 +20,9 @@
     "ethers": "^6.0.8",
     "express": "^4.18.2",
     "node-fetch": "^2.6.9",
-    "ws": "^8.12.1"
+    "ws": "^8.12.1",
+    "cron": "^2.2.0",
+    "express-ws": "^5.0.2"
   },
   "devDependencies": {
     "cron": "^2.2.0",
