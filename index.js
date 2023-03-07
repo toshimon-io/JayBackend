@@ -27,7 +27,7 @@ app.use(cors())
 
 const routes = require('./routes/routes.js')(app, fs);
 
-const job = new CronJob('*/5 * * * * *', function() {
+const job = new CronJob('*/50 * * * * *', function() {
     fs.readFile('./data/prices.json', 'utf8', async (err, dataa) => {
         const data = JSON.parse(dataa)
         const _infuraProvider = new ethers.ethers.EtherscanProvider(

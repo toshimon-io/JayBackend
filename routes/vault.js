@@ -29,7 +29,7 @@ var CronJob = require('cron').CronJob;
           ws.send(JSON.stringify(_data));
       }, true);
 
-      const job2 = new CronJob('*/5 * * * * *', function() {
+      const job2 = new CronJob('*/50 * * * * *', function() {
           console.log("BrodcastStart")
           fs.readFile('./data/prices.json', 'utf8', (err, data) => {
             const _data = (JSON.parse(data)).prices;
